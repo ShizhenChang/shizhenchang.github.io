@@ -158,12 +158,12 @@ input, select, textarea {
 		color: inherit;
 	}
 
-	h2, h3, h4, h5, h6 {
+	h2, h3, h6 {
 		font-weight: 700;
 	}
 
 	h1 {
-		font-size: 2.1em;
+		font-size: 2.05em;
 		letter-spacing: -0.025em;
 		font-weight: bold;
 	}
@@ -173,8 +173,10 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
-		letter-spacing: -0.015em;
+		font-weight: 450;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1.45em;
 	}
 
 	h3 {
@@ -182,7 +184,17 @@ input, select, textarea {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
 	}
-
+	
+	h4 {
+		color: #696969;
+		font-size: 1.3em;
+		letter-spacing: -0.015em;
+	}
+	h5 {
+		color: #fff;
+		font-size: 0.9em;
+		letter-spacing: -0.015em;
+	}
 	em, i {
 		font-style: italic;
 	}
@@ -2049,6 +2061,11 @@ input, select, textarea {
 		height: 3.7em;
 		line-height: 3.7em;
 	}
+	
+	  #nav .nav-toggle {
+   		 display: none;
+  	}
+
 
 		#nav ul {
 			margin-bottom: 0;
@@ -2239,6 +2256,38 @@ input, select, textarea {
 				#top .image {
 					margin: 0 auto 2em auto;
 				}
+						#nav ul {
+				display: none; /* Hide the navigation menu */
+		  	}
+			
+			#nav {
+				flex-direction: column;
+				height: auto;
+				padding: 0px;
+			}		
+		 	
+					#nav a:hover {
+						background-color: transparent;
+					}
+					
+			#nav .nav-toggle {;
+			  display: flex;
+			  list-style: none;
+			  margin: 0;
+			  padding: 0;
+			  flex-direction: row;
+			  align-items: center;
+  			  justify-content: center;
+			
+			  }
+			
+				#nav .nav-toggle li {
+					margin-right: 0;
+					margin-bottom: 0px;
+				  }
+				 #nav .nav-toggle a {
+				  text-decoration: none;
+				}
 
 	}
 
@@ -2264,10 +2313,21 @@ input, select, textarea {
 			}
 
 			h1 {
-				font-size: 2.25em;
+				font-size: 1.4em;
 				line-height: 1.25em;
 			}
-
+			h3 {
+				font-size: 1.1em;
+				line-height: 1.25em;
+			}
+			h4 {
+				font-size: 1em;
+				line-height: 1.25em;
+			}
+			h5 {
+				font-size: 0.7em;
+				line-height: 1.25em;
+			}			
 			header {
 				margin: 0 0 2em 0;
 			}
@@ -2392,22 +2452,40 @@ input, select, textarea {
 			}
 
 		/* Nav */
-
+		
+			#nav ul {
+				display: none; /* Hide the navigation menu */
+		  	}
+			
 			#nav {
-				height: 44px;
-				line-height: 44px;
-			}
-
-				#nav a {
-					padding: 0 0.75em;
-					height: inherit;
-					line-height: inherit;
-					border-radius: 0;
-				}
-
+				flex-direction: column;
+				height: auto;
+				padding: 0px;
+			}		
+		 	
 					#nav a:hover {
 						background-color: transparent;
 					}
+					
+			#nav .nav-toggle {;
+			  display: flex;
+			  list-style: none;
+			  margin: 0;
+			  padding: 0;
+			  flex-direction: row;
+			  align-items: center;
+  			  justify-content: center;
+			
+			  }
+			
+				#nav .nav-toggle li {
+					margin-right: 0;
+					margin-bottom: 0px;
+				  }
+				 #nav .nav-toggle a {
+				  text-decoration: none;
+				}
+
 
 		/* Articles */
 
